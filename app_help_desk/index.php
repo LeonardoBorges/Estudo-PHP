@@ -44,6 +44,11 @@
                       Usuário ou Senha inválido(s)
                   </div>
                 <?php } ?>
+                <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+                  <div class="text-danger"> 
+                      Só é possível acessar as páginas se fizer o login
+                  </div>
+                <?php } ?>
 
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>

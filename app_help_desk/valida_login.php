@@ -18,6 +18,10 @@
     */
 
     //variavel que verifica autenticação
+
+    session_start();
+
+   
     $usuario_autenticado = false;
 
     // usuarios do sistema
@@ -38,7 +42,10 @@
     }
     if($usuario_autenticado){
         echo 'Usuário Autenticado';
+        $_SESSION['autenticado'] = 'SIM';
     } else {
+        $_SESSION['autenticado'] = 'NAOS';
         header('Location: index.php?login=erro');
+
     }
 ?>
