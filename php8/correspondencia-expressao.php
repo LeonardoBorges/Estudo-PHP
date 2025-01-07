@@ -1,5 +1,5 @@
 <?php
-    $busca = 'texto qualquer'; 
+    $busca = rand(0,50); 
 
     switch ($busca) { // COMPARAÇÃO por igualdade/equalidade
         case '1':
@@ -27,11 +27,13 @@
 */
    // match com condionais e operacoes logicas
 $retornoMatch = match (true) {
-    $busca > 0 => 'Valor positivo',
-    $busca < 0 => 'Valor negativo',
+    $busca > 10 => 'valor maior que 10',
+    $busca < 30 => 'Valor menor que 30',
     default => 'Valor zero'
 };
-
+echo "valor busca: " . $busca;
+echo "<br>";
+echo "Resultado Match: " . $retornoMatch;
 
 
 
