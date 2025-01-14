@@ -3,5 +3,5 @@
 =======
 # Estudo-PHP
 
-caminho para diretorio logal -> cd C:\xampp\htdocs
+caminho para diretorio logal -> cd D:\xampp\htdocs
 >>>>>>> master
